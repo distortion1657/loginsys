@@ -1,0 +1,20 @@
+{
+  "name": "loginsys",
+  "version": "1.0.0",
+  "description": "Learning to make a working login system that is hooked to a database.",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Distortion",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.1",
+    "nodemon": "^3.1.4"
+  }
+}

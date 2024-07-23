@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+
+
+        <form action="/signup" method="post">
+
+        
+
+            <div class="form-group">
+        <h1>Sign Up</h1>
+        <div class="response">
+            <h2 class = "<%= type %> "> <%= message %> </h2>
+    
+            </div>
+                <div class="form-members">
+                <input type="text" placeholder="Name" name = "name" required>
+            </div>
+            <div class="form-members">
+                <input type="password" placeholder="Password" name = "password" required>
+            </div>
+            <div class="form-members">
+                <input type = "submit" class = "submitbtn">
+            </div>
+        Already have an account? <a href="/login"> Login! </a>
+            
+        </form>
+    </div>
+</body>
+</html>
