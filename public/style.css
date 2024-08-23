@@ -85,11 +85,60 @@ span{
     height: 80vh;
 }
 
-/* .hero-content{
+.header{
+    position: relative;
+    width: 100%;
+    background-color: #070F2B;
+    height: 8.2svh;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; 
+    padding-left: 20px;
+    font-size: 2em;
+}
+
+.greeter{
+    position: relative;
+    display: flex;
+    flex-basis: 0;
+    flex-grow: ;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: right;
+    padding: 2.3em 1em;
+    white-space: pre;
+}
+
+.user-input{
     display: flex;
     align-items: center;
-    justify-content: center;    
-} */
+    justify-content: center;
+
+}
+
+.user-feed{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid ;
+    border-radius: 10px;
+    width: 80%;
+    margin: 2em 1em;
+    height: 2em
+}
+
+
+.message-header{
+    
+}
 @media screen and (min-width: 767px){
     .form-container{
     font-size: 1.3vw;

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const connect = mongoose.connect('mongodb+srv://agamanstha41:pTeVU2kBtCnQzv0o@distortion.61lbmo2.mongodb.net/logins?retryWrites=true&w=majority&appName=distortion')
+const connect = mongoose.connect('mongodb+srv://agamanstha41:pTeVU2kBtCnQzv0o@distortion.61lbmo2.mongodb.net/Web-App?retryWrites=true&w=majority&appName=distortion')
 
 // Database connection
 
@@ -20,8 +20,18 @@ const loginSchema = new mongoose.Schema({
         type: String,
         required: true
     }},
-    {collection: "Login"}
-)
+    {collection: 'Sign-In-Data'}
+) 
 
-const collection = mongoose.model('Login', loginSchema)
-module.exports = collection;
+const msgSchema = mongoose.Schema({
+    message: String
+},
+{collection: 'messages'});
+
+const loginModel = mongoose.model('Web-App',loginSchema)
+const msgModel = mongoose.model('message', msgSchema)
+
+module.exports = {
+    loginModel,
+    msgModel
+}

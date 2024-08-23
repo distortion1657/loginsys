@@ -10,7 +10,31 @@
     <title>Home-Page</title>
 </head>
 <body>
-    Welcome to the Home Page!
+    <div class="header">
+        <div class="header-content">Login Sys </div>
+    </div>
+    <span class="greeter">Hello, <b> <%= user %> !</b></span>
+    
+    <!-- <div class="user-input">
+        <form action="/loghome" method = "post">
+            <input type="text" placeholder="Share your thoughts!" name = 'message' required> 
+            <input type="submit" value = "Post!" class = 'submitbtn'>
+        </form>
+    </div>
+   <div class="user-feed">
+        
+        <% user_message.forEach(function(msg){%>
+            <div class="message">
+            <div class="message-header">
+            <%=user%> says:
+            </div>
+            <div class="message-content">
+                <%= msg.message %>
+            <br>
+            <% } ) %>
+            </div>
+        </div>
+   </div> -->
     
 </body>
 </html>
